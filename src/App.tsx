@@ -1,4 +1,3 @@
-import React from 'react';
 import './tailwindcss/output.css';
 import './tailwindcss/input.css';
 import './App.css';
@@ -105,9 +104,9 @@ function App() {
               <td className=' hover:scale-105 duration-100 select-none ease-out'> {todo.isComplete ? <span>&#x2705;</span> : <span>&#x23F3;</span>}</td>
               <td className=' hover:scale-105 duration-100 select-none ease-out'>
                 {todo.isComplete ?
-                  <div onClick={() => continiueTodo(todo.id)} className='underline cursor-pointer'>Продолжить</div>
+                  <div onClick={() => continiueTodo(todo.id)} className='underline cursor-pointer'>Continue</div>
                   :
-                  <div onClick={() => completeTodo(todo.id)} className='underline cursor-pointer'>Завершить</div>
+                  <div onClick={() => completeTodo(todo.id)} className='underline cursor-pointer'>Complete</div>
                 }
               </td>
               <td className='cursor-pointer hover:scale-105 duration-100 select-none ease-out'>
